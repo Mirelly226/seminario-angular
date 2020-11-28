@@ -1,0 +1,15 @@
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center row" *ngFor="let item of news"
+      (click)="navigateToItem(item)">
+    <div class="col-lg-12">
+      <img src="{{item.photo}}" class="img-fluid" alt="quixote">
+    </div>
+    <div class="col-lg-12">
+      <h3>{{item.title}}</h3>
+    </div>
+    <div class="col-lg-12">
+      <p>{{item.resume}}</p>
+    </div>
+
+  </li>
+</ul>
